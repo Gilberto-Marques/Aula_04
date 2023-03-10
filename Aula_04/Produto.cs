@@ -23,15 +23,27 @@ namespace Aula_04
         {
             return Descricao;
         }
+        public void setDescricao(string descricao)
+        {
+            Descricao = descricao;
+        }
 
         public int getId( ) 
         {
             return Id;
         }
+        public void setId(int id)
+        {
+            Id = id;
+        }
 
         public decimal getValor()
         {
             return Valor;
+        }
+        public void setValor(decimal valor)
+        {
+            Valor = valor;
         }
     }
 }
