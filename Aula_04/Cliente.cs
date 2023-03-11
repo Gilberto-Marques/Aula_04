@@ -11,11 +11,14 @@ namespace Aula_04
 		private int Id;
 		private string Nome;
 		private string Telefone;
-		public Cliente(int id, string nome, string telefone)
+		private Endereco Endereco;
+		public Cliente(int id, string nome, string telefone, Endereco endereco)
 		{
 			Id = id;
 			Nome = nome;
 			Telefone = telefone; 
+			Endereco = endereco;
+
 		}
 
 		public int getId(int id)
@@ -33,7 +36,11 @@ namespace Aula_04
 		}
 		public void setNome(string nome)
 		{
-			Nome = nome;
+			if(nome != "")
+			{
+				Nome = nome;
+
+			}
 		}
 
 		public string getTelefone() 
@@ -43,6 +50,15 @@ namespace Aula_04
 		public void setTelefone(string telefone)
 		{
 			Telefone= telefone;
+		}
+
+		public Endereco getEndereco()
+		{
+			return Endereco;
+		}
+		public void setEndereco(Endereco endereco)
+		{
+			Endereco = endereco;
 		}
 	}
 
