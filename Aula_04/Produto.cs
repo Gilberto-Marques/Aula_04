@@ -19,7 +19,7 @@ namespace Aula_04
             Descricao = descricao;
         }
 
-        public string getDescricao()
+        public string getDescricao( )
         {
             return Descricao;
         }
