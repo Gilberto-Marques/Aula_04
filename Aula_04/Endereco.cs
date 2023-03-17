@@ -26,6 +26,37 @@ namespace Aula_04
 
         }
 
+        public string EnderecoCompleto()
+        {
+            return Rua + ", " + Numero + ", " + Bairro + " Cidade: "+Cidade+ "/" ;
+        }
+
+        public string EnderecoCurto()
+        {
+            return Rua + " " + Numero;
+        }
+
+        public Endereco BuscaPorCep(string cep)
+        {
+            return new Endereco("", "", "", cep, "", "");
+
+        }
+
+        public string EstadoPorCidade(string estado)
+        {
+            if(estado == "SP")
+            {
+                return "Taquaritinga";
+            }
+            return Cidade;
+        }
+
+        public void InserirNoBanco(Endereco endereco)
+        {
+            //db.Null.ENDERECO.ADD(endereco
+            //db.savechanges();
+        }
+
         public string getRua()
         {
             return Rua;
