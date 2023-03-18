@@ -77,5 +77,26 @@ speed.numeroPortas = 0;
 Console.WriteLine(speed.ExibirDados());
 Console.WriteLine(gol.ExibirDados());
 
+List<Carro> listaCarros = new List<Carro>();
+listaCarros.Add(gol);
+listaCarros.Add(Palio);
+listaCarros.Add(Uno);
+listaCarros.Add(Saveiro);
+
+//ira listar o primeiro adicionado na lista, sempre em ordem de inclusao
+Console.WriteLine(listaCarros[0].fabricante);
+
+listaCarros.Remove(Palio);
+
+for (int i = 0; i < listaCarros.Count; i++ )
+{
+    Console.WriteLine(listaCarros[i].ExibirDados());
+}
+
+foreach (var item in listaCarros)
+{
+    Console.WriteLine(item.ExibirMarca());
+}
+
 
 
