@@ -98,5 +98,27 @@ foreach (var item in listaCarros)
     Console.WriteLine(item.ExibirMarca());
 }
 
+//Imprima na tela todos os clientes desse contexto;
+//Dica crie uma lista pra eles.
+List<Cliente> listaCliente = new List<Cliente>();
+listaCliente.Add(c1);
+listaCliente.Add(c2);
+listaCliente.Add(c3);
+listaCliente.Add(c4);
+listaCliente.Add(c5);
+
+foreach (var item in listaCliente)
+{
+    Console.WriteLine(item.ExibirDados());
+}
+
+
+//Crie uma lista com 560 produtos
+//Imprima na tela
+
+//Crie uma lista que aceite qualquer tipo de veículo
+//imprimam na tela
+
+
 
 

@@ -21,7 +21,12 @@ namespace Aula_04
 
 		}
 
-		public int getId(int id)
+        public string ExibirDados()
+        {
+            return "\nDados do cliente\nID: "+Id+"\nNome: "+Nome+"\nTelefone: "+Telefone;
+        }
+
+        public int getId(int id)
 		{
 			return id;
 		}
