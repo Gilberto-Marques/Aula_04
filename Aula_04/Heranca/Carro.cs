@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aula_04.Heranca
+/*namespace Aula_04.Heranca
 {
     //Classe carro herda todos os atributos da classe Veiculo
     public class Carro: Veiculo
@@ -21,3 +21,4 @@ namespace Aula_04.Heranca
 
     }
 }
+*/

@@ -19,6 +19,10 @@ namespace Aula_04
             Descricao = descricao;
         }
 
+        public string ExibirDados()
+        {
+            return "\nID: " + Id + ",  Valor:R$" + (Valor*3/2)+ ",  Descrição: " + Descricao+Descricao;
+        }
         public string getDescricao( )
         {
             return Descricao;

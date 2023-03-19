@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Aula_04;
 using Aula_04.Heranca;
+using System;
+using System.Text;
 
 Console.WriteLine("Hello, World!");
 
@@ -46,17 +48,17 @@ c2.setEndereco(endereco2);
 Console.WriteLine(c2.getEndereco().getRua() + " " + c2.getEndereco().getNumero());
 
 Console.WriteLine(c2.getEndereco().EnderecoCompleto());
-
+/*
 Carro gol = new Carro();
-gol.temMotor = true;
-gol.numeroPortas = 4;
-gol.numeroAssento = 5;
+gol.setTemMotor(true);
+gol.setNumeroPortas(4);
+gol.setNumeroAssento(5);
 
 Bike caloi = new Bike();
 
-caloi.temMotor = false;
-caloi.numeroPortas = 0;
-caloi.numeroAssento = 1;
+caloi.setTemMotor(false);
+caloi.setNumeroPortas(0);
+caloi.setNumeroAssento(1);
 
 gol.fabricante = "VW";
 gol.cintoSeguranca = true;
@@ -71,8 +73,8 @@ Palio.fabricante = "Fiat";
 Uno.fabricante = "Fiat";
 
 Bike speed = new Bike();
-speed.temMotor = true;
-speed.numeroPortas = 0;
+speed.setTemMotor(true);
+speed.setNumeroPortas(0);
 
 Console.WriteLine(speed.ExibirDados());
 Console.WriteLine(gol.ExibirDados());
@@ -98,8 +100,11 @@ foreach (var item in listaCarros)
     Console.WriteLine(item.ExibirMarca());
 }
 
-//Imprima na tela todos os clientes desse contexto;
-//Dica crie uma lista pra eles.
+*/
+Console.WriteLine("___________________________________________________");
+Console.WriteLine("Imprima na tela todos os clientes desse contexto");
+Console.WriteLine("Dica crie uma lista pra eles");
+
 List<Cliente> listaCliente = new List<Cliente>();
 listaCliente.Add(c1);
 listaCliente.Add(c2);
@@ -112,12 +117,38 @@ foreach (var item in listaCliente)
     Console.WriteLine(item.ExibirDados());
 }
 
+Console.WriteLine("___________________________________________________");
+Console.WriteLine("Crie uma lista com 560 produtos");
+Console.WriteLine("Imprima na tela");
+List<Produto> listaProduto = new List<Produto>();
+for(int i = 1; i<=560; i++)
+{
+    Produto p = new Produto(1,1,"");
+    p.setId(i);
+    p.setValor(i);
+    p.setDescricao(i+"");
+    listaProduto.Add(p);
+ 
+}
+//Imprimindo todos os produtos incluidos na lista PRODUTO
+Console.WriteLine("Dados dos Produtos:");
+foreach (var item in listaProduto)
+{
+    Console.WriteLine(item.ExibirDados());
+}
 
-//Crie uma lista com 560 produtos
-//Imprima na tela
+Console.WriteLine("___________________________________________________");
+Console.WriteLine("Crie uma lista que aceite qualquer tipo de veículo");
+Console.WriteLine("Imprimir na tela");
 
-//Crie uma lista que aceite qualquer tipo de veículo
-//imprimam na tela
+List<Veiculo> listaVeiculo = new List<Veiculo>();
+int condicao = 1;
+Veiculo v = new Veiculo("", "", 0, 0, true);
+
+while (condicao == 1)
+{ 
+    Console.WriteLine("Informe os dados do veículo: ");
+}
 
 
 
