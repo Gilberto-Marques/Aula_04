@@ -23,6 +23,11 @@ namespace Aula_04
         {
             return "\nID: " + Id + ",  Valor:R$" + (Valor*3/2)+ ",  Descrição: " + Descricao+Descricao;
         }
+
+        public string ExibirVenda()
+        {
+            return "\nID: " + Id + ",  Valor: R$" +Valor+",  Descrição: " + Descricao;
+        }
         public string getDescricao( )
         {
             return Descricao;

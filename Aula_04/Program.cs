@@ -4,10 +4,10 @@ using Aula_04.Heranca;
 using System;
 using System.Text;
 
-/*
+
 Console.WriteLine("Hello, World!");
 
-Produto p1 = new Produto(1, 10.90M, "Cerveja");
+/*Produto p1 = new Produto(1, 10.90M, "Cerveja");
 
 Console.WriteLine(p1.getDescricao()+" "+p1.getId());
 
@@ -16,7 +16,7 @@ p1.setDescricao("Cerveja Samba");
 p1.setDescricao("Cerveja Samba");
 
 Console.WriteLine(p1.getDescricao() + " " + p1.getId());
-
+*/
 Endereco endereco = new Endereco(
     "Rua Francisco Mateus",
     "385",
@@ -159,7 +159,31 @@ foreach (var item in listaVeiculo)
 {
     Console.WriteLine(item.ExibirDados());
 }
+List<Produto> listaProduto2 = new List<Produto>();
+Produto p1 = new Produto(1, 3.5M, "Cerveja Skol");
+listaProduto2.Add(p1);
+Produto p2 = new Produto(2, 6.5M, "Guaraná Poty");
+listaProduto2.Add(p2);
+Produto p3 = new Produto(3, 18.5M, "Carne Moída");
+listaProduto2.Add(p3);
+Produto p4 = new Produto(4, 12.5M, "Café Pelé");
+listaProduto2.Add(p4);
+Produto p5 = new Produto(5, 8.5M, "Pão de Forma");
+listaProduto2.Add(p5);
 
-*/
+//Crie uma classe vendas com uma lista de produtos comprada por um cliente
+//Imprima na tela a lista de produtos , o Id da venda e a Data da venda.
+Venda v1 = new Venda(001, "02/04/2023");
+
+Console.WriteLine("Conclusão de venda:["+v1.getId()+ "] data: "+v1.getData());
+foreach(var item in listaProduto2)
+{
+    Console.WriteLine(item.ExibirVenda());
+}
+
+
+
+
+
 
 
