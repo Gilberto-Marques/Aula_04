@@ -1,10 +1,11 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*namespace Aula_04.Heranca
+namespace Aula_04.Heranca
 {
     //Classe carro herda todos os atributos da classe Veiculo
     public class Carro: Veiculo
@@ -16,9 +17,10 @@ using System.Threading.Tasks;
 
         public string ExibirMarca()
         {
-            return "O fabricante deste veículo é: "+fabricante;
+            return "O fabricante deste veiculo é: "+fabricante;
         }
 
     }
 }
-*/
+
+

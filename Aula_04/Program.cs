@@ -4,6 +4,7 @@ using Aula_04.Heranca;
 using System;
 using System.Text;
 
+/*
 Console.WriteLine("Hello, World!");
 
 Produto p1 = new Produto(1, 10.90M, "Cerveja");
@@ -48,21 +49,23 @@ c2.setEndereco(endereco2);
 Console.WriteLine(c2.getEndereco().getRua() + " " + c2.getEndereco().getNumero());
 
 Console.WriteLine(c2.getEndereco().EnderecoCompleto());
-/*
+
 Carro gol = new Carro();
-gol.setTemMotor(true);
-gol.setNumeroPortas(4);
-gol.setNumeroAssento(5);
+gol.temMotor = true;
+gol.numeroPortas = 4;
+gol.numeroAssentos = 5;
 
 Bike caloi = new Bike();
-
-caloi.setTemMotor(false);
-caloi.setNumeroPortas(0);
-caloi.setNumeroAssento(1);
+caloi.temMotor = false;
+caloi.numeroPortas = 0;
+caloi.numeroAssentos = 1;
+caloi.tipo = "bicicleta";
 
 gol.fabricante = "VW";
 gol.cintoSeguranca = true;
 gol.arCondicionado = false;
+gol.marcaRadio = "Pioneer";
+gol.tipo = "carro";
 
 Carro Saveiro = new Carro();
 Carro Palio = new Carro();
@@ -73,8 +76,13 @@ Palio.fabricante = "Fiat";
 Uno.fabricante = "Fiat";
 
 Bike speed = new Bike();
-speed.setTemMotor(true);
-speed.setNumeroPortas(0);
+speed.temMotor = false;
+speed.numeroPortas = 0;
+speed.numeroAssentos = 1;
+speed.tipo = "bicicleta";
+
+// Faça uma ação chamada ExibirDados e
+// mostre as informações na tela pelo Console.Writeline
 
 Console.WriteLine(speed.ExibirDados());
 Console.WriteLine(gol.ExibirDados());
@@ -100,7 +108,7 @@ foreach (var item in listaCarros)
     Console.WriteLine(item.ExibirMarca());
 }
 
-*/
+
 Console.WriteLine("___________________________________________________");
 Console.WriteLine("Imprima na tela todos os clientes desse contexto");
 Console.WriteLine("Dica crie uma lista pra eles");
@@ -142,14 +150,16 @@ Console.WriteLine("Crie uma lista que aceite qualquer tipo de veículo");
 Console.WriteLine("Imprimir na tela");
 
 List<Veiculo> listaVeiculo = new List<Veiculo>();
-int condicao = 1;
-Veiculo v = new Veiculo("", "", 0, 0, true);
+listaVeiculo.Add(caloi);
+listaVeiculo.Add(gol);
+listaVeiculo.Add(speed);
 
-while (condicao == 1)
-{ 
-    Console.WriteLine("Informe os dados do veículo: ");
+
+foreach (var item in listaVeiculo)
+{
+    Console.WriteLine(item.ExibirDados());
 }
 
-
+*/
 
 
